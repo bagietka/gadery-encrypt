@@ -14,7 +14,7 @@ swap(){
 		s2=$( echo ${key:$i+1:1} )
 		out=$out$s2$s1
 	done
-	echo $out
+	echo $out | tr '[:upper:]' '[:lower:]'
 }
 
 # No parameters
